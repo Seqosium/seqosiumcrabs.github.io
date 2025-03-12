@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+    padding: 1em;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    padding: 10px 20px;
+    min-height: 100vh;
+    position: relative;
+    background: url('images/crabs-in-island-5uydf4p3okxbklw1.jpg') center center fixed;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: crimson
+}
+
+/* nav styling for part 4 */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: beige;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-size: x-large;
+    border-radius: 0 0 20px 20px;
+}
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #321449;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* a styling for part 4 */
+
+a:visited {
+    color: #3f2846;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:visited {
+    /* Color after link visited. I don't like putting this on menus but here's the code to show you I know how */
+    color: #000000;
+}
+
+a:hover {
+    color: #321449;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff0000;
+}
+
+
+
+header {
+    text-align: center;
+    background-color: rgb(0, 0, 200, .1);
+    max-width: 80vw;
+}
+
+.shadow-border {
+    margin: 1em auto 2em;
+    padding: 3em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: beige
+
+}
+
+.summary {
+    display: flex;
+    text-align: center;
+    margin: 1em auto 2em;
+    max-width: 80vw;
+}
+
+.summary ul {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.summary li {
+    border: 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.education {
+    background-color: rgb(240, 90, 45, .1);
+    margin: 1em auto 2em;
+    max-width: 80vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.work-history {
+    border-radius: 10px;
+    max-width: 80vw;
+    margin: 1em auto 2em;
+    background-color: rgb(0, 0, 200, .05);
+    background-color: beige;
+}
+
+.work-xp {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.work-xp>div {
+    order: -1;
+}
+
+.work-xp>a {
+    width: 25vw;
+    text-align: center;
+}
+
+.work-xp img {
+    max-height: 130px;
+    transform: translateY(-5px);
+}
+
+.work-xp ul {
+    list-style: square inside;
+}
+
+.interests-objectives,
+.summary-education {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 80vw;
+    margin: 1em auto 2em;
+}
+
+.interests-objectives h2 {
+    color: rgb(0, 0, 0)
+}
+
+.interests-objectives section,
+.summary-education section {
+    flex: 1;
+    background-color: rgb(39, 60, 143, .2);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    background-color: beige
+}
+
+.interest-list {
+    list-style: square inside;
+}
+
+.summary-education h2 {
+    color: rgb(0, 0, 0);
+}
+
+ul {
+    list-style: none;
+    display: block;
+}
+
+/* Social Media Contact Icons */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+    margin-top: 2em;
+    padding: 0;
+    align-items: center;
+}
+
+.contact-icon {
+    max-width: 100px;
+    max-height: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+
+    /* Styles for tablets and mobile devices */
+    body {
+        padding: 10px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .interests-objectives,
+    .summary-education {
+        display: block;
+    }
+}

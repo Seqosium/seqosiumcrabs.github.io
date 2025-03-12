@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Biking on the Oregon Coast</title>
+<link rel="stylesheet" href="BikingStyles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="Biking.html" class="logo">PROJECT 4: Crabs (and me)</a>
+        <div class="nav-links" id="navLinks">
+            <a href="Biking.html">Home</a>
+            <a href="AboutMe.html">About Me</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+    <Header>
+        <div class="banner">
+        </div>
+        <h1>
+            E-Biking on the Oregon Coast
+        </h1>
+        <p>
+            From sprucing up your commute to increasing accessibility
+        </p>
+    </Header>
+
+    <section class="sign-up-form">
+        <img src="images/SignUpCrab1.webp" alt="crab with a 'helmet' on">
+        <div class="sign-up">
+            <h2>Sign up for our Newsletter:</h2>
+            <button onclick="document.getElementById('signup-modal').style.display='block'">Sign Up</button>
+            <div id="signup-modal" class="form-popup">
+                <form class="form-container">
+                    <h2>Sign Up your crab for our E-Biking adventures</h2>
+                   <div>
+                    <label for="name">Crab's Name:</label>
+                    <input type="text" id="name" name="fullname" placeholder="Enter your crab's name" required>
+                   </div>
+                   <div>
+                    <label for="email">Crab's Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your crab's email" required> 
+                   </div>  
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+                </form>
+            </div>
+        </div>
+        <img src="images/SignUpCrab2.webp" alt="two crabs on their last ride to the mountain top">
+    </section>
+    <section class="blurb">
+        <h2>
+            What are E-Bikes?
+        </h2>
+          <p>  E-bikes, or electric bicycles, are bicycles equipped with an electric motor and a rechargeable battery to assist with pedaling. Unlike regular bikes, which rely entirely on human power, e-bikes provide varying levels of motor assistance, making cycling easier, especially on hills or long distances.</p>
+            <p>E-bikes come in different types, including pedal-assist (where the motor only activates when the rider pedals) and throttle-controlled (which can propel the bike without pedaling). The motor assistance typically stops at speeds around 20-28 mph, depending on local regulations.</p>
+            <p>The main differences between e-bikes and regular bikes are the added motor, battery, and electronic controls, which increase weight and cost but enhance accessibility. E-bikes allow riders to travel farther with less effort, making them a popular choice for commuting, fitness, and recreation. While they still require pedaling, e-bikes reduce strain and fatigue, making cycling more inclusive for a wider range of riders.</p>
+    </section>
+    <section class="video-embed">
+        <video controls loop>
+            <source src="videos/crabbikevideo.mp4" type="video/mp4">
+          </video> 
+          <div class="video-text">
+            <h2>Check out this handy E-Biking Guide!</h2>
+          </div>
+
+    </section>
+    <section class="accessibility">
+        <div>
+        <h2>Increased accessibility</h2>
+        <p>  E-Bikes increase accessibility and mobility in people with mobility challenges: 
+            <a href="https://www.nadtc.org/news/blog/e-bikes-increase-mobility-access-for-older-adults-and-people-with-disabilities/">An article from the NADTC</a> covers how e-bikes transform the sport of biking into something people of all levels of ability can access. 
+            </p>
+            </div>
+            <img src="images/VariousTypesOfCrabBike.webp" alt="">
+    </section>
+    <section class="blog-post">
+        <div>
+            <h2>
+                <a href="https://electricbikeblog.com/how-to-figure-out-electric-bike-range/">Check out Electric Bike Blog’s post about E-Bike range here</a>
+            </h2>
+        </div>
+        <img src="images/BlogBike.webp" alt="A normal bike">
+        <div>
+            <h2>
+                <a href="https://electricbikeblog.com/types-of-electric-motors-for-electric-bikes/">Or their blog post about types of electric bike motors here</a>
+            </h2>
+        </div>
+
+    </section>
+    <section class="bike-shop">
+        <h2>
+            Want to shop around? Take a look at this top E-Bike Model:
+        </h2>
+        <img src="images/ShopbikeCrab.webp" alt="A crab considering purchasing a bicycle">
+        <div>
+        <h3>
+            Brachyura 50 megaton
+        </h3>
+        <button onclick="alert('Sorry sold out')">
+            BUY NOW
+        </button>
+        </div>
+    </section>
+    <footer>
+        © 2025 Infinite Crab Pain Generator | All Rights Reserved | images are created by Dall-E 3 and Videos by OpenAI Sora
+    </footer>
+    
+</body>
+</html>

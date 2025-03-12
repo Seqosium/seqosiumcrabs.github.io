@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding: 1em;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    padding: 10px 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: beige;
+    border-radius: 0 0 20px 20px;
+}
+.banner {
+background-image: url("images/Banner Crab.png");
+background-position: center;
+background-size: cover;
+height: 300px;
+width: 100%;
+border-radius: 20px 20px 0 0;
+}
+
+/* nav styling for part 4 */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: beige;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-size: x-large;
+    border-radius: 0 0 20px 20px;
+}
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #321449;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* a styling for part 4 */
+
+a:visited {
+    color: #3f2846;
+    /* Light gray or any other light color */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:visited {
+    /* Color after link visited. I don't like putting this on menus but here's the code to show you I know how */
+    color: #000000;
+}
+
+a:hover {
+    color: #321449;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff0000;
+}
+
+
+
+header h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+header p{
+    margin-bottom: 20px;
+}
+section {
+    margin: 30px 0;
+}
+section img {
+    border-radius: 20px;
+    max-width: 100%;
+}
+.sign-up-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.sign-up-form img {
+    max-width: 100%;
+}
+.sign-up {
+    text-align: center;
+
+}
+.sign-up button {
+    font-size: 2rem;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color:burlywood;
+}
+.sign-up button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.blurb {
+    background-color: beige;
+    border-radius: 20px;
+    padding: 20px;
+}
+.blurb p {
+    margin-bottom: 10px;
+}
+.video-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.video-embed video {
+    width: 50%;
+}
+.video-text {
+    flex-grow: 1;
+    font-size: larger;
+}
+.accessibility {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+    background-color: beige;
+    border-radius: 20px;
+}
+.accessibility div {
+    padding: 10px;
+}
+.accessibility img {
+    max-width: 100%;
+    border-radius: 0 20px 20px 0;
+}
+.blog-post {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: beige;
+    border-radius: 20px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.bike-shop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: beige;
+    border-radius: 20px;
+    padding: 10px;
+}
+.bike-shop h2 {
+    width: 100%;
+}
+.bike-shop img {
+    width: 65%;
+}
+.bike-shop div {
+    width: 35%;
+    text-align: center;
+    font-size: 30px;
+}
+.bike-shop div button {
+    font-size: 2rem;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(196, 216, 99);
+}
+.bike-shop div button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 30px;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 500px;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form-container div {
+    display: flex;
+  }
+  .form-container input {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  .form-container button {
+    font-size: 1em;
+  }
